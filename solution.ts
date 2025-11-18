@@ -1,5 +1,3 @@
-// no:1
-// ---------
 function formatValue(
   value: number | string | boolean
 ): number | string | boolean {
@@ -12,8 +10,6 @@ function formatValue(
   }
 }
 
-// no:2
-// ---------
 function getLength(value: string | any[]): number {
   if (Array.isArray(value)) {
     return value.length;
@@ -22,8 +18,6 @@ function getLength(value: string | any[]): number {
   }
 }
 
-// no.3
-// --------
 class Person {
   name: string;
   age: number;
@@ -38,9 +32,6 @@ class Person {
   }
 }
 
-//no.4
-// ------
-
 type item = {
   title: string;
   rating: number;
@@ -51,8 +42,6 @@ function filterByRating(items: item[]): item[] {
   return result;
 }
 
-// no.5
-// ---------
 type user = {
   id: number;
   name: string;
@@ -65,8 +54,6 @@ function filterActiveUsers(users: user[]): user[] {
   return activeUser;
 }
 
-// no.6
-// -------
 interface Book {
   title: string;
   author: string;
@@ -82,8 +69,6 @@ function printBookDetails(book: Book): void {
   }
 }
 
-// no.7
-// ------
 function getUniqueValues<T>(arr1: T[], arr2: T[]): T[] {
   let newArr: T[] = [...arr1];
   let exist = false;
@@ -102,8 +87,6 @@ function getUniqueValues<T>(arr1: T[], arr2: T[]): T[] {
   return newArr;
 }
 
-// no.8
-// ------
 interface Product {
   name: string;
   price: number;
